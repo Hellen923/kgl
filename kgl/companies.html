@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Companies - KGL</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f4f4f4;
+            padding: 15px;
+            height: 100vh;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            margin: 5px 0;
+        }
+        .sidebar a:hover {
+            background: #ddd;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="companies.html">Companies</a>
+        <a href="users.html">Users</a>
+        <a href="products.html">Products</a>
+        <a href="payments.html">Payments</a>
+        <a href="sales.html">Sales</a>
+        <a href="#logout" style="color: red;">Logout</a>
+    </div>
+    
+    <div class="main-content">
+        <h2>Companies</h2>
+        <div class="table-container">
+            <h3>Registered Companies</h3>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Company Name</th>
+                    <th>Contact Person</th>
+                    <th>Phone</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Joleen Young Farmers</td>
+                    <td>Joleen Hellen</td>
+                    <td>+256 752536262</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>AVIS Project Ltd</td>
+                    <td>Angellica Kajumba</td>
+                    <td>+256 706006225</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

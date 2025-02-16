@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGL Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-card {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .remember-me input {
+            margin-right: 8px;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #00ff08;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background-color: #5a84d8;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #007BFF;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container"id="main">
+            <div class ="row">
+                <div class ="col-md-7 text-align center">
+                    <h1>Welcome to Karibu Groceries Limited</h1>
+                    <p>
+                        Karibu Groceries LTD is a wholesale produce distributor dealing in cereals<br>
+                         with 2 Branches in different locations. Over time all operations have been<br>
+                          recorded in ruled black books. This has prompted the owner to seek for a software solution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-card">
+        <h1>Login</h1>
+        <form action="login-card" method="POST">
+            <input type="email" class="input-field" name="email" placeholder="Email" required>
+            <input type="password" class="input-field" name="password" placeholder="Password" required>
+            
+            <div class="remember-me">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+
+            <button type="submit" class="login-button"><a href="/Dashboard.html">LOGIN</a></button>
+
+            
+                
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+
+

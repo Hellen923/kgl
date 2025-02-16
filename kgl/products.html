@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Products - KGL</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f4f4f4;
+            padding: 15px;
+            height: 100vh;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            margin: 5px 0;
+        }
+        .sidebar a:hover {
+            background: #ddd;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="companies.html">Companies</a>
+        <a href="users.html">Users</a>
+        <a href="products.html">Products</a>
+        <a href="payments.html">Payments</a>
+        <a href="sales.html">Sales</a>
+        <a href="#logout" style="color: red;">Logout</a>
+    </div>
+    
+    <div class="main-content">
+        <h2>Products</h2>
+        <div class="table-container">
+            <h3>Available Products</h3>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price (UGX)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Beans</td>
+                    <td>Cereals</td>
+                    <td>150,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Grain Maize</td>
+                    <td>Cereals</td>
+                    <td>120,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Cow peas</td>
+                    <td>Cereals</td>
+                    <td>120,000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Gnuts</td>
+                    <td>Cereals</td>
+                    <td>850,000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Soybeans</td>
+                    <td>Cereals</td>
+                    <td>800,000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

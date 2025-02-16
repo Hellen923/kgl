@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Users - KGL</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f4f4f4;
+            padding: 15px;
+            height: 100vh;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            margin: 5px 0;
+        }
+        .sidebar a:hover {
+            background: #ddd;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #f8f8f8;
+        }
+        #list-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: top;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="companies.html">Companies</a>
+        <a href="users.html">Users</a>
+        <a href="products.html">Products</a>
+        <a href="payments.html">Payments</a>
+        <a href="sales.html">Sales</a>
+        <a href="#logout" style="color: red;">Logout</a>
+    </div>
+    
+    <div class="main-content">
+        <h2>Users</h2>
+        <div class="table-container">
+            <h3>Registered Users</h3>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Phone</th>
+                    <th>Branches</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Michael Okello</td>
+                    <td>Manager</td>
+                    <td>+256 702 123456</td>
+                    <td>Maganjo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Susan Adongo</td>
+                    <td>Manager</td>
+                    <td>+256 703 654321</td>
+                    <td>Matugga</td>
+                </tr>
+            </table>
+
+            <div id="list-container">
+                <h3>User List for Clients</h3>
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th style="text-align: left;">Number</th>
+                            <th>Profile Picture</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Favorite Products</th>
+                            <th>Branches</th> <!-- Added Branches Column -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img style="border-radius: 50%; width: 70px; height: 70px;" src="shes.webp" alt="Profile Picture"></td>
+                            <td>Juliet Manson</td>
+                            <td>mansonju@gmail.com</td>
+                            <td>+256-752410606</td>
+                            <td>Maize, Beans, Coffee</td>
+                            <td>Maganjo</td> <!-- Added Branch -->
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img style="border-radius: 50%; width: 50px; height: 50px;" src="IMAGE_FILE_CACHE_PROFILE_PROVIDER - Copy - Copy.jpg" alt="Profile Picture"></td>
+                            <td>Hellen Rachel</td>
+                            <td>hellenrachel@gmail.com</td>
+                            <td>+256-752536262</td>
+                            <td>Maize, Beans, Coffee</td>
+                            <td>Matugga</td> <!-- Added Branch -->
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img style="border-radius: 50%; width: 50px; height: 50px;" src="spects.jpg" alt="Profile Picture"></td>
+                            <td>Allan Kay</td>
+                            <td>allan@gmail.com</td>
+                            <td>+256-706006225</td>
+                            <td>Maize, Beans, Coffee</td>
+                            <td>Maganjo</td> <!-- Added Branch -->
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img style="border-radius: 50%; width: 50px; height: 50px;" src="she.jpeg" alt="Profile Picture"></td>
+                            <td>John Godfrey</td>
+                            <td>johngodfrey@gmail.com</td>
+                            <td>+256-752557442</td>
+                            <td>Maize, Beans, Coffee</td>
+                            <td>Matugga</td> <!-- Added Branch -->
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img style="border-radius: 50%; width: 70px; height: 70px;" src="bea copy.jpeg" alt="Profile Picture"></td>
+                            <td>Isaac Newton</td>
+                            <td>newtonisaac@gmail.com</td>
+                            <td>+256-740746740</td>
+                            <td>Maize, Beans, Coffee</td>
+                            <td>Maganjo</td> <!-- Added Branch -->
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><img style="border-radius: 50%; width: 50px; height: 50px;" src="men.jpg" alt="Profile Picture"></td>
+                            <td>John Fred</td>
+                            <td>johnfred@gmail.com</td>
+                            <td>+256-744330849</td>
+                            <td>Maize, Beans, Coffee</td>
+                            <td>Matugga</td> <!-- Added Branch -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

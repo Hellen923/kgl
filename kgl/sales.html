@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sales - KGL</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f4f4f4;
+            padding: 15px;
+            height: 100vh;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            margin: 5px 0;
+        }
+        .sidebar a:hover {
+            background: #ddd;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="companies.html">Companies</a>
+        <a href="users.html">Users</a>
+        <a href="products.html">Products</a>
+        <a href="payments.html">Payments</a>
+        <a href="sales.html">Sales</a>
+        <a href="#logout" style="color: red;">Logout</a>
+    </div>
+    
+    <div class="main-content">
+        <h2>Sales</h2>
+        <div class="table-container">
+            <h3>Recent Sales</h3>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Branch</th>
+                    <th>Product</th>
+                    <th>Price (UGX)</th>
+                    <th>Date</th>
+                    <th>Amount of stock (tons)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Matugga</td>
+                    <td>Coffee</td>
+                    <td>50,000</td>
+                    <td>2025-02-14</td>
+                    <td> 600</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Matugga</td>
+                    <td>Beans</td>
+                    <td>150,000</td>
+                    <td>2025-02-13</td>
+                    <td> 500</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Matugga</td>
+                    <td>Maize Grain</td>
+                    <td>150,000</td>
+                    <td>2025-02-13</td>
+                    <td> 700</td>
+                </tr> 
+                <!-- More sales data here -->
+                <tr>
+                    <td>4</td>
+                    <td>Matugga</td>
+                    <td>Cow peas</td>
+                    <td>150,000</td>
+                    <td>2025-02-13</td>
+                    <td> 500</td>
+                </tr>    
+                <tr>
+                    <td>5</td>
+                    <td>Matugga</td>
+                    <td>Soy beans</td>
+                    <td>150,000</td>
+                    <td>2025-02-13</td>
+                    <td> 500</td>
+                </tr>
+                <!-- More sales data here -->for Maganjo and Matugga
+                <tr>
+                    <td>6</td>
+                    <td>Maganjo</td>
+                    <td>Coffee</td>
+                    <td>150,000</td>
+                    <td>2025-02-13</td>
+                    <td> 600</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Maganjo</td>
+                    <td>Gnuts</td>
+                    <td>150,000</td>
+                    <td>2025-02-13</td>
+                    <td> 500</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Maganjo</td>
+                    <td>Maize Grain</td>
+                    <td>150,000</td>
+                    <td>2025-02-13</td>
+                    <td> 700</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Maganjo</td>
+                    <td>Cow peas</td>
+                    <td>150,000</td>
+                    <td>2025-02-13</td>
+                    <td> 500</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Maganjo</td>
+                    <td>Soy beans</td>
+                    <td>150,000</td>
+                    <td>2025-02-13</td>
+                    <td> 500</td>
+                </tr>      
+            </table>
+        </div>
+    </div>
+</body>
+</html>
