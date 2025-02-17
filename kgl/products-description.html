@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cards Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #5a5757;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 800px;
+        }
+        .card {
+            background: rgb(221, 214, 214);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card p {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="card">
+            <img src="gnuts.jpg" alt="Image 1">
+            <h1><a href="products.html">GNUTS</a></h1>
+            <h3>UGX.3500 per kg</h3>
+            <p>We have a variety of gnuts from all parts of our country.</p>
+            <p>We have several types of gnuts.They are got from specific suppliers from all parts of our country.</p>
+        </div>
+        <div class="card">
+            <img src="beans.jpg" alt="Image 2">
+            <h1><a href="products.html">BEANS</a></h1>
+            <h3>UGX.6000 per kg</h3>
+            <p>We have a variety of beans from all parts of our country.</p>
+            <p>We have a variety from all soils from the land.</p>
+        </div>
+        <div class="card">
+            <img src="cow peas.jpg" alt="Image 3">
+            <h1><a href="products.html">COW PEAS</a></h1>
+            <h3>UGX.4500 per kg</h3>
+            <p>We have a variety of cow peas from all parts of our country.</p>
+            <p>Do you need fresh ones , green ,we got it all.</p>
+        </div>
+        <div class="card">
+            <img src="soya.jpg" alt="Image 4">
+            <h1><a href="products.html">SOYA BEANS</a></h1>
+            <h3>UGX.5500 per kg</h3>
+            <p>Soya beans are very important in our daily life.</p>
+            <p>We have alot of types of soya we one do want you are welcome.</p>
+        </div>
+        <div class="card">
+            <img src="maize pic.jpg" alt="Image 5">           
+             <h1><a href="products.html">MAIZE</a></h1>
+            <h3>UGX.5000 per kg</h3>
+            <p>Maize is very important in our daily life.</p>
+            <p>We have a variety of maize from all parts of our country.</p>
+        </div>
+    </div>
+</body>
+</html>
